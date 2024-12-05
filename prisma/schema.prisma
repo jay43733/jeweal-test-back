@@ -55,8 +55,8 @@ model ListMenu {
   remark        String?   @db.MediumText
   note          String?   @db.MediumText
   docNumber     String?
-  issuedDate    DateTime?
-  dueDate       DateTime?
+  issuedDate    String?
+  dueDate       String?
   clientName    String?
   taxInvoice    String?
   address       String?
