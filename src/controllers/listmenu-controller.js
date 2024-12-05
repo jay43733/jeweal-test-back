@@ -116,12 +116,11 @@ exports.createList = async (req, res, next) => {
 
     const oldListMenu = await prisma.listMenu.findUnique({
       where: { listMenuId },
-    })
+    });
 
     // Create List Menu
     let listMenu;
     if (oldListMenu) {
-
       // Convert the decimal fields to numbers
       const [convertedOldListMenu] = convertNumber(
         [oldListMenu],
